@@ -1,0 +1,203 @@
+.bg-rgb{
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab ),url(../img/background/LittleCubeDark.png) repeat;
+	background-size: 400% 400%;
+	-webkit-animation: gradientBG 10s ease infinite;
+	        animation: gradientBG 10s ease infinite;
+}
+
+.text-rgb{
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab );
+	background-size: 400% 400%;
+	  -webkit-animation: gradientBG 10s ease infinite;
+	  -webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+			animation: gradientBG 10s ease infinite;
+}
+
+/*_______________________________NAV BAR  1__________________________*/
+
+/* FORME */
+
+.parallelogrammeR{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab );
+	background-size: 400% 400%;
+	-webkit-animation: gradientBG 10s ease infinite;
+	        animation: gradientBG 10s ease infinite;
+	-webkit-transform:skew(30deg);
+	-moz-transform:skew(30deg);
+	-o-transform:skew(30deg);
+    tranform:skew(30deg);
+    border: 2px solid #05071E;
+}
+
+.parallelogrammeL{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab );
+	background-size: 400% 400%;
+	-webkit-animation: gradientBG 10s ease infinite;
+	        animation: gradientBG 10s ease infinite;
+	-webkit-transform:skew(-30deg);
+	-moz-transform:skew(-30deg);
+	-o-transform:skew(-30deg);
+    tranform:skew(-30deg);
+    border: 2px solid #05071E;
+}
+
+
+
+.navLeft
+{ 
+    animation: TranslateNavLeft 1s linear forwards;
+    transform: translateX(-100vh);
+
+ 
+}
+.navRight
+{ 
+    animation: TranslateNavRight 1s linear forwards;
+    transform: translateX(+100vh);
+
+
+}
+@keyframes TranslateNavLeft {
+    from {
+        transform: translateX(-100vh);
+    }
+  
+    to {
+        transform: translateX(0);
+    }
+  }
+
+
+@keyframes TranslateNavRight {
+    from {
+        transform: translateX(+100vh);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.nav-item-menu{
+    margin: 0px 1px;
+    padding: 15px 60px;
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0) 50%, #ff99332a 25% , #dc3545 25%);
+    transition: background-position 500ms;
+    border-bottom: rgba(255, 255, 255, 0) 2px solid;
+}
+
+.nav-item-menu:hover {
+    background-position: 0 -100%;
+    animation: border-bottom 1s linear forwards alternate;
+    animation-delay: 500ms;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.nav-item-menu:hover a {
+    animation: colortext 1s linear forwards alternate;
+}
+
+
+@keyframes colortext {
+    from {
+        color: whitesmoke;
+    }
+  
+    to {
+        color: rgb(22, 22, 22);
+    }
+  }
+
+@keyframes border-bottom {
+    from {
+        border-bottom: rgba(255, 255, 255, 0) 2px solid;
+    }
+  
+    to {
+        border-bottom: #ffff 2px solid;
+    }
+  }
+
+
+/*___________________________NAV BAR  2_____________________________________*/
+
+.NavBar2 span:hover a i{
+    transform: scale(1.3);
+}
+
+.NavBar2 nav .nav1{
+    -webkit-transform:skew(30deg);
+	-moz-transform:skew(30deg);
+	-o-transform:skew(30deg);
+    tranform:skew(30deg);
+    font-weight: 500;
+}
+
+.NavBar2 nav .nav2{
+    -webkit-transform:skew(-30deg);
+	-moz-transform:skew(-30deg);
+	-o-transform:skew(-30deg);
+    tranform:skew(-30deg);
+    font-weight: 500;
+}
+
+.NavBar2 .navbar-nav {
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.NavBar2 .nav-link{
+    color: rgba(255,255,255,.8)!important;
+}
+
+.NavBar2 .nav-link:hover{
+    color: rgba(255,255,255,1)!important;
+    transform: scale(1.1);
+}
+
+.NavBar2 .dropdown-menu{
+	z-index: 120;
+}
+
+.NavBar2{
+	position: relative;
+	z-index: 5;
+}
+
+.NavBar2 .dropdown-menu{
+	width: 300px!important;
+}
+
+
+
+
+/* ANIMATION CSS RGB */
+
+  @-webkit-keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
